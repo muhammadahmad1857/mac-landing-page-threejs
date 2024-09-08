@@ -91,7 +91,9 @@ const Home = () => {
       </header>
 
       <main className="absolute top-1/4 left-1/2 transform -translate-x-1/2 text-center">
-        <h1 className="masked text-6xl font-extrabold mb-4">Macbook Pro</h1>
+        <h1 className="masked text-6xl font-cinzel font-extrabold mb-4">
+          Macbook Pro
+        </h1>
         <h2 className="text-2xl font-medium mb-4">Oh So Pro!</h2>
         <p className="text-lg max-w-2xl mx-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sint
