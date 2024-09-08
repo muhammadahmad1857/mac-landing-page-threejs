@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Cinzel Decorative Bold';
+    src: url('/CinzelDecorative-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }@layer base {
+    .masked {
+      position: relative;
+      background: linear-gradient(135deg, #d53369, #daae51) no-repeat center center;
+      -webkit-background-clip: text; /* WebKit-specific property */
+      background-clip: text;
+      color: transparent;
+      background-size: cover;
+    }
+  
+    .masked::before {
+      content: "macbook pro.";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #d53369, #daae51) no-repeat center center;
+      -webkit-background-clip: text; /* WebKit-specific property */
+      background-clip: text;
+      color: transparent;
+      background-size: cover;
+      filter: blur(40px);
+      opacity: 0.8;
+    }
+  
+    .masked::after {
+      content: "macbook pro.";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #d53369, #daae51) no-repeat center center;
+      -webkit-background-clip: text; /* WebKit-specific property */
+      background-clip: text;
+      color: transparent;
+      background-size: cover;
+      filter: blur(20px);
+      opacity: 0.8;
+    }
+  }
+  
+
+/* The scrollbar itself */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* The part of the scrollbar that's visible */
+::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+}
+
+/* The draggable part of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* The draggable part of the scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+}
+body{
+
+/* Width of the scrollbar */
+scrollbar-width: thin; /* Options: auto, thin, none */
+
+/* Colors of the scrollbar */
+scrollbar-color: #888 transparent; /* thumb color, track color */
+}
