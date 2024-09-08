@@ -41,7 +41,7 @@ const Home = () => {
             ].map((item, i) => (
               <Link
                 href="#"
-                className="text-lg font-semibold hover:text-gray-300 transition-colors duration-300"
+                className="text-lg font-semibold w-full p-4 rounded-xl text-center bg-black transition-colors duration-500 hover:bg-gray-900 hover:text-gray-300 "
                 key={i}
               >
                 {item}
@@ -81,7 +81,7 @@ const Home = () => {
           ].map((item, i) => (
             <Link
               href="#"
-              className="text-lg font-semibold hover:text-gray-300 transition-colors duration-300"
+              className="text-lg font-semibold relative before:absolute before:w-0 before:h-1 before:bg-red-600 before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:transition-all before:hover:w-full before:duration-500 hover:text-gray-300 transition-colors duration-300"
               key={i}
             >
               {item}
