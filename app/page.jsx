@@ -1,10 +1,8 @@
 "use client";
-import { Environment, ScrollControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 import React, { useState } from "react";
-import MacContainer from "./(components)/macContainer";
 import Link from "next/link";
 import { Divide as Hamburger } from "hamburger-react";
+import Model from "./(components)/model";
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -100,20 +98,7 @@ const Home = () => {
           ratione asperiores explicabo?
         </p>
       </main>
-
-      <Canvas
-        camera={{ fov: 12, position: [0, -10, 220] }}
-        className="max-md:mt-5 max-sm:w-2"
-      >
-        <Environment
-          files={[
-            "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/4k/studio_small_09_4k.exr",
-          ]}
-        />
-        <ScrollControls>
-          <MacContainer />
-        </ScrollControls>
-      </Canvas>
+      <Model />
     </div>
   );
 };
